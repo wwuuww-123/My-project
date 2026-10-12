@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>TechStore – Магазин компьютерной техники</title>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">TechStore</a>
+                <ul class="nav-links">
+                    <li><a href="#">Ноутбуки</a></li>
+                    <li><a href="#">Компьютеры</a></li>
+                    <li><a href="#">Комплектующие</a></li>
+                    <li><a href="#">Периферия</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+                <a href="#" class="cart-btn">Корзина (0)</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container">
+            <h1>Мощная техника для любых задач</h1>
+            <p>Лучшие компьютеры, ноутбуки и комплектующие с гарантией и быстрой доставкой</p>
+            <a href="#products" class="cta-button">Смотреть каталог</a>
+        </div>
+    </section>
+
+    <!-- Категории -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Популярные категории</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">💻</div>
+                    <h3>Ноутбуки</h3>
+                    <p>Игровые, офисные и ультрабуки</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🖥️</div>
+                    <h3>Компьютеры</h3>
+                    <p>Готовые сборки и кастомные ПК</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">⚙️</div>
+                    <h3>Комплектующие</h3>
+                    <p>Процессоры, видеокарты, SSD и др.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🖱️</div>
+                    <h3>Периферия</h3>
+                    <p>Клавиатуры, мыши, мониторы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Товары -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Хиты продаж</h2>
+            <div class="product-grid">
+                <!-- Товар 1 -->
+                <article class="product-card">
+                    <div class="product-image">Фото товара</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Игровой ноутбук ProX 15</h3>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <span class="price">129 990 ₽</span>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Товар 2 -->
+                <article class="product-card">
+                    <div class="product-image">Фото товара</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Видеокарта Ultra RTX 4070</h3>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <span class="price">89 500 ₽</span>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Товар 3 -->
+                <article class="product-card">
+                    <div class="product-image">Фото товара</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Механическая клавиатура Apex K1</h3>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <span class="price">7 990 ₽</span>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Товар 4 -->
+                <article class="product-card">
+                    <div class="product-image">Фото товара</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Монитор QHD 27"</h3>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <span class="price">24 990 ₽</span>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 TechStore. Все права защищены.</p>
+            <p>Москва, ул. Примерная, д. 1 | +7 (999) 000-00-00</p>
+        </div>
+    </footer>
+</body>
+</html>
